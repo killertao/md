@@ -129,8 +129,95 @@ d-block
 d-md-flex,d-sm-block
 ```
 
-### flex
+#### flex
 
-```scss	
+~~~scss
+.d-flex
+.flex-{direction} row,column,rowreverse,columnreverse
+
+.just-content-{flex-layout} start,end center between space-around
+.align-items-{flex-layout}
+.align-content-{flex-layout}
+.flex-wrap :warp|nowrap|wrapreverse
+.flex-fill{
+    flex-flow:1 1 auto
+}
+.flex-grow-[0,1]
+.flex-shrink-[0,1]
+.flex-order-[first,0-5,last],
+
+~~~
+
+
+
+#### spacing
+
+```scss
+$spacers: (
+  0: 0,
+  1: $spacer / 4,
+  2: $spacer / 2,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+) !default;
+
+{property}{sides}-{size} 
+{property}{sides}-{breakpoint}-{size}
+property(
+	m:'margin',
+    p:'padding'
+)
+sides(
+    t:"top",
+    b:"bottom",
+    s:"start left",
+    e:"end right",
+    x:'s|e',
+    y:'b|t',
+    '':"没有的话就是4个边"
+)
+size(
+    0 - for classes that eliminate the margin or padding by setting it to 0
+    1 - (by default) for classes that set the margin or padding to $spacer * .25
+    2 - (by default) for classes that set the margin or padding to $spacer * .5
+    3 - (by default) for classes that set the margin or padding to $spacer
+    4 - (by default) for classes that set the margin or padding to $spacer * 1.5
+    5 - (by default) for classes that set the margin or padding to $spacer * 3
+    auto - for classes that set the margin to auto
+)
+eg:mt-0,mx-0,m-auto,m-t-sm-auto
 ```
+
+#### borders
+
+
+
+#### sizing
+
+
+
+#### background
+
+
+
+#### colors
+
+#### 
+
+#### position
+
+#### float 
+
+#### text
+
+#### vertical align
+
+#### visibility
+
+#### shadows
+
+#### overflows
+
+#### Interactions
 
